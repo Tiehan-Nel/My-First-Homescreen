@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My-First-Homepage</title>
+  <meta name="Tiehan-Nel" content="Homepage">
+
+  <!-- generate timestamp for CSS and JS (cache version control) -->
+    <script type="text/javascript">
+        (function(){
+            var timestamp= Date.now();
+            console.trace('timestamp: ' + timestamp)
+        })();
+    </script>
+
+    <!-- Define the main css document(timestamp included) -->
+    <link rel="stylesheet" href="CSS/main.css?x=""">
+    
+    
+
+</head>
+
+<body>
+
+    <script type="text/javascript" src = "JavaScript/main.js?x="+timestamp+"">
+        console.trace("initialize main.js: JavaScript/main.js?x="+timestamp+"")
+    </script>
+
+    <h1>Hello, world!</h1>
+
+</body>
+</html>
